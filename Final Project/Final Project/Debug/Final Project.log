@@ -1,0 +1,3 @@
+﻿  console input.c
+H:\gpro\Final Project\Final Project\console input.c(29): warning C4715: 'validateCoordinates': not all control paths return a value
+  Final Project.vcxproj -> H:\gpro\Final Project\Debug\Final Project.exe
