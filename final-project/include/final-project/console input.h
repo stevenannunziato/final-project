@@ -44,3 +44,6 @@ bool validateCoordinates(int xInput, int yInput, int boardSize);
 
 // Consumes a minimum and maximum value and returns a user input within the minimum and maximum.
 int getInputRange(int min, int max);
+
+//Consumes an X and a Y coordinate value and confirms with the user if the coordinate is correct
+bool confirmCoordinate(int xInput, int yInput);

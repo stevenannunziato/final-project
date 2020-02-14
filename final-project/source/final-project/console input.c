@@ -76,3 +76,19 @@ int getInputRange(int min, int max) {
 	} while (input < min || input > max);
 	return input;
 }
+
+//Consumes an X and a Y coordinate value and confirms with the user if the coordinate is correct
+bool confirmCoordinate(int xInput, int yInput) {
+	char input;
+	bool correct;
+	printf("Is %d", xInput);
+	printf(", %d", yInput);
+	printf(" correct? (y/n) ");
+	scanf_s("%c %d", &input);
+	if (input == "y" || input == "Y") {
+		correct = true;
+	}
+	if (input == "n" || input == "N") {
+		correct = false;
+	}
+}

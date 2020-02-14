@@ -41,5 +41,9 @@ int main() {
 	int newY = getInputRange(0, 10);
 	validateCoordinates(newX, newY, boardS);
 
+	int x3 = getXInput();
+	int y3 = getYInput();
+	confirmCoordinate(x3, y3);
+	
 	return 0;
 }
