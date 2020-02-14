@@ -18,9 +18,15 @@
     <ClCompile Include="..\..\..\source\final-project\final-project.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\source\final-project\console input.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\include\final-project\final-project.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\final-project\console input.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

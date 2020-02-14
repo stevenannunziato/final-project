@@ -19,9 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\source\final-project\console input.c" />
     <ClCompile Include="..\..\..\source\final-project\final-project.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\include\final-project\console input.h" />
     <ClInclude Include="..\..\..\include\final-project\final-project.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
