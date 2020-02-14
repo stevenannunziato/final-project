@@ -47,13 +47,32 @@ int getYInput() {
 // Consumes two integers which represent (x, y) coordinates and a game board size.
 // Determines if the coordinates reside within the game board.
 bool validateCoordinates(int xInput, int yInput, int boardSize) {
+
+	bool success = true;
+
 	if (xInput < 0 || xInput > boardSize) {
-		printf("X value is not a valid spot on the board.");
-		return false;
+		printf("X value is not a valid spot on the board.\n");
+		success = false;
 	}
 
 	if (yInput < 0 || yInput > boardSize) {
-		printf("Y value is not a valid spot on the board.");
-		return false;
+		printf("Y value is not a valid spot on the board.\n");
+		success = false;
 	}
+
+	return success;
+}
+
+// Consumes a minimum and maximum value and returns a user input within the minimum and maximum.
+int getInputRange(int min, int max) {
+	int input = -999;
+	do {
+		if (input != -999 && (input < min || input > max)) {
+			printf("Invalid input.\n");
+		}
+		printf("Enter value between %d ", min);
+		printf("and %d: ", max);
+		scanf_s("%d", &input);
+	} while (input < min || input > max);
+	return input;
 }
